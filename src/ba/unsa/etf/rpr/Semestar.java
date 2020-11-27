@@ -17,6 +17,10 @@ public class Semestar {
         predmeti.add(p);
     }
 
+    public void izbaciPredmet(Predmet p) {
+        predmeti.remove(p);
+    }
+
     public int getSemestar() {
         return semestar;
     }
