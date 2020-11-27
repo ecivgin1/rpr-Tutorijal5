@@ -13,6 +13,14 @@ public class Predmet {
         this.upisani = upisani;
     }
 
+    public void upisiStudenta(Student s) {
+        upisani.add(s);
+    }
+
+    public void ispisiStudenta(Student s) {
+        upisani.remove(s);
+    }
+
     public int getEcts() {
         return ects;
     }

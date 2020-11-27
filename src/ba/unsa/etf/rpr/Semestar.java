@@ -4,27 +4,25 @@ import java.util.ArrayList;
 
 public class Semestar {
     private int semestar;
-    private ArrayList<ObavezniPredmet> obavezni;
-    private ArrayList<IzborniPredmet> izborni;
+    private ArrayList<Predmet> predmeti;
     private int maxIzbornih;
 
-    public Semestar(int semestar, ArrayList<ObavezniPredmet> obavezni, ArrayList<IzborniPredmet> izborni, int maxIzbornih) {
+    public Semestar(int semestar, ArrayList<Predmet> predmeti, int maxIzbornih) {
         this.semestar = semestar;
-        this.obavezni = obavezni;
-        this.izborni = izborni;
+        this.predmeti = predmeti;
         this.maxIzbornih = maxIzbornih;
+    }
+
+    public void dodajPredmet(Predmet p) {
+        predmeti.add(p);
     }
 
     public int getSemestar() {
         return semestar;
     }
 
-    public ArrayList<ObavezniPredmet> getObavezni() {
-        return obavezni;
-    }
-
-    public ArrayList<IzborniPredmet> getIzborni() {
-        return izborni;
+    public ArrayList<Predmet> getObavezni() {
+        return predmeti;
     }
 
     public int getMaxIzbornih() {
